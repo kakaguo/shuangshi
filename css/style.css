@@ -1,38 +1,54 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    background: #eff0f4;
+    height: 100%;
+    background-color: #fff;
     font-family: "Microsoft YaHei", Arial, Verdana, Helvetica, sans-serif;
-    color: #7a7676;
-    line-height: 20px;
     font-size: 14px;
+    /*background-color: rgb(219,194,187);*/
 }
 
-input, select, textarea {
-    font-family: "Microsoft YaHei", Arial, Verdana, Helvetica, sans-serif;
-    color: #767676;
+input, button, select, textarea {
+    outline:none;
+    border-style: none;
 }
 
-/*a {*/
-/*color: #65CEA7;*/
-/*}*/
+textarea{
+    resize:none;
+}
+
 a{
+    outline: none;
     text-decoration:none;
 }
+
 a:focus, a:active, a:hover, a:link{
     outline: none;
     text-decoration: none;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    color: #353F4F;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Open Sans', sans-serif;
 }
+
 label {
     font-weight: 500;
 }
 
 hr {
     border-color: #ddd;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style-type: none;
 }

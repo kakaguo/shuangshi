@@ -3,26 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="./css/typo.css" rel="stylesheet" type="text/css">
-    <link href="./css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div class="container">
-        <div class="main">
-            <div class="load-image"></div>
-            <p class="text">教好每一个孩子，让学习更美好</p>
-            <p class="error">您输入的账户不存在</p>
-            <input class="user" type="text" placeholder="请输入用户名">
-            <input class="user" type="text" placeholder="请输入密码">
-            <div class="check">
-                <input type="checkbox" id="remember">
-                <label for="remember">
-                    <span class="check-image"></span>
-                    <span class="check-text">记住我</span>
-                </label>
-
+        <div class="layer">
+            <div class="layer-main">
+                <span class="layer-title">选择课程</span>
+                <!--<div class="layer-select">-->
+                    <!--<label class="layer-text" for="layer-input">选择课程</label>-->
+                    <!--<select name="" id="">-->
+                        <!--<option>一年级数学暑期提高班</option>-->
+                        <!--<option>二年级数学暑期提高班</option>-->
+                        <!--<option>三年级数学暑期提高班</option>-->
+                        <!--<option>四年级数学暑期提高班</option>-->
+                        <!--<option>五年级数学暑期提高班</option>-->
+                    <!--</select>-->
+                <!--</div>-->
+                <label class="layer-text" for="layer-input">选择课程</label>
+                <div class="layer-choice">
+                    <input type="text" id="layer-input" placeholder="四年级数学暑期提高班">
+                    <ul>
+                        <li>一年级数学暑期提高班</li>
+                        <li>二年级数学暑期提高班</li>
+                        <li>三年级数学暑期提高班</li>
+                        <li>四年级数学暑期提高班</li>
+                        <li>五年级数学暑期提高班</li>
+                        <li>六年级数学暑期提高班</li>
+                        <li>七年级数学暑期提高班</li>
+                    </ul></div>
+                <button class="login">开始上课</button>
             </div>
-            <button>登录</button>
+        </div>
+        <header>
+            <p class="logo"></p>
+            <span class="title">高三数学暑假复习班</span>
+            <span class="header-right">退出</span>
+            <span class="header-right user">JayLiu</span>
+        </header>
+        <div class="main">
+            <div class="main-top">
+                <div class="main-left">
+                    <div class="content">
+                        <span class="title">题目 / 第3题</span>
+                        <div class="choice question-type">
+                            <span class="text">题型</span>
+                            <label>
+                                <input type="radio" name="question-type">
+                                <span class="check-image"></span>
+                                <span class="check-text">单选题</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="question-type">
+                                <span class="check-image"></span>
+                                <span class="check-text">多选题</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="question-type">
+                                <span class="check-image"></span>
+                                <span class="check-text">判断题</span>
+                            </label>
+                        </div>
+                        <div class="choice number">
+                            <span class="text">选题个数</span>
+                            <select name="" id="">
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div class="choice answer">
+                            <span class="text">答案</span>
+                            <label>
+                                <input type="checkbox" name="answer">
+                                <span class="check-image"></span>
+                                <span class="check-text">A</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer">
+                                <span class="check-image"></span>
+                                <span class="check-text">B</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer">
+                                <span class="check-image"></span>
+                                <span class="check-text">C</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer">
+                                <span class="check-image"></span>
+                                <span class="check-text">D</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer">
+                                <span class="check-image"></span>
+                                <span class="check-text">E</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="operate">
+                        <span class="text">开始答题</span>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="content">
+                        <span class="title">教师屏幕控制</span>
+                        <span class="spec">设置教师屏幕右下角是否显示答题情况及内容</span>
+                        <div class="choice range">
+                            <span class="text">当前排行范围</span>
+                            <label>
+                                <input type="radio" name="range">
+                                <span class="check-image"></span>
+                                <span class="check-text">全国排行</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="range">
+                                <span class="check-image"></span>
+                                <span class="check-text">班级排名</span>
+                            </label>
+                        </div>
+                        <div class="choice show">
+                            <span class="text">右下角界面显示</span>
+                            <label>
+                            <input type="radio" name="range">
+                            <span class="check-image"></span>
+                            <span class="check-text">各项选择人数百分比 + 排行榜</span>
+                        </label>
+                            <label>
+                                <input type="radio" name="range">
+                                <span class="check-image"></span>
+                                <span class="check-text">全部答案正确率 + 排行榜</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="operate">
+                        <span class="text">排行榜</span>
+                        <span class="text">显示中</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bottom">
+                <div class="content">
+                    <span class="title">答题</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
