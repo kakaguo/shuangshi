@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/progress-ring.css">
 </head>
 <body>
     <div class="container">
@@ -145,11 +146,101 @@
                 </div>
             </div>
             <div class="main-bottom">
-                <div class="content">
+                <div class="bottom-left">
                     <span class="title">答题</span>
+                    <div class="content">
+                        <ul class="classroom">
+                            <li class="selected">全国</li>
+                            <li>1班</li>
+                            <li>2班</li>
+                        </ul>
+                        <div class="count">
+                            <p><span class="text">正确率</span><span class="number">60%</span></p>
+                            <p><span class="text">报名人数</span><span class="number">40</span></p>
+                            <p><span class="text">答题人数</span><span class="number">30</span></p>
+                        </div>
+                        <div class="show">
+                            <div class="show-left">
+                                <div class="progress-ring" data-color="#f3f7fb, #40baff" data-duration="0.5">
+                                    <span>hello</span>
+                                </div>
+                            </div>
+                            <div class="show-right">
+                                <div class="number show-detail">
+                                    <span>18人</span>
+                                    <span>6人</span>
+                                    <span>18人</span>
+                                    <span>0人</span>
+                                    <span>0人</span>
+                                </div>
+                                <div class="percent show-detail">
+                                    <span>60%</span>
+                                    <span>40%</span>
+                                    <span>60%</span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="progress show-detail">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="choice show-detail">
+                                    <span>A</span>
+                                    <span>B</span>
+                                    <span>C</span>
+                                    <span>D</span>
+                                    <span>E</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <table>
+                        <tr>
+                            <th>序号</th>
+                            <th>学生手机号</th>
+                            <th>学生姓名</th>
+                            <th>答题时长</th>
+                            <th>答案对错</th>
+                            <th>校区</th>
+                            <th>班级</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>12345678910</td>
+                            <td>王浩浩</td>
+                            <td>正确</td>
+                            <td>6秒</td>
+                            <td>霸州双师校区</td>
+                            <td>6班</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>12345678910</td>
+                            <td>王浩浩</td>
+                            <td>正确</td>
+                            <td>6秒</td>
+                            <td>霸州双师校区</td>
+                            <td>6班</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="internet">
+                    <img src="./img/internet.png" alt="网路连接出错">
+                    <p class="text">网络异常，页面内容无法显示</p>
+                    <p class="refresh">刷新</p>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/progress-ring.js"></script>
+<script>
+    $(".progress-ring").loadingRing();
+</script>
 </html>
