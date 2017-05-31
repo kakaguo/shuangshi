@@ -1,0 +1,128 @@
+.container {
+    width: 576px;
+    height: 360px;
+    padding: 55px 30px;
+    font-size: 0;
+}
+
+.container .left {
+    display: inline-block;
+    vertical-align: top;
+    width: 273px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.container .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 213px;
+    height: 100%;
+}
+
+/*left*/
+
+/*progress-ring*/
+.progress-ring {
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+}
+.progress-ring div {
+    height: 200px;
+    width: 200px;
+    border: 20px solid transparent;
+}
+.progress-ring .progress-left, .progress-ring .progress-right, .progress-ring .progress-cover {
+    clip: rect(0 100px 200px 0);
+    /* rect( [0 | <width/2> | <height> | 0] ) */
+}
+
+.progress-ring .progress-text {
+    margin-top: 70px;
+    font-size: 21px;
+    color: #ff9c0e;
+    /* 进度文字颜色 */
+    line-height: 1;
+}
+
+.progress-ring .progress-percent {
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color: #999999;
+}
+
+.container .answer {
+    margin-top: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.container .answer .text {
+    font-size: 17px;
+    color: #333333;
+    margin-right: 15px;
+}
+
+.container .answer .choice {
+    display: inline-block;
+    font-size: 17px;
+    /*vertical-align: middle;*/
+    width: 26px;
+    line-height: 26px;
+    height: 26px;
+    background-color: #ff9c0e;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.container .answer .choice:first-of-type { margin-left: 0; }
+
+/*right*/
+.container .right {
+    background-color: #f3f7fb;
+    border-radius: 8px;
+}
+.container .right .title{
+    font-size: 19px;
+    color: #2a3460;
+    text-align: center;
+    line-height: 1;
+    margin-top: 27px;
+    margin-bottom: 33px;
+    font-weight: 700;
+}
+
+.container .right .text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container .right .text li {
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 33px;
+    color: #333333;
+    background-color: #ffffff;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    /*padding-left: 48px;*/
+    margin-left: 18px;
+    padding-left: 30px;
+}
+
+.container .right .text li:nth-child(1) { border: 1px solid #f6b555; }
+.container .right .text li:nth-child(2) { border: 1px solid #dfdd49; }
+.container .right .text li:nth-child(3) { border: 1px solid #9cdff3; }
+
+.container .right .text li:before {
+    position: absolute;
+    margin-left: -48px;
+    margin-top: -7px;
+}
+
+.container .right .text li:nth-child(1):before { content: url('../img/first.png'); }
+.container .right .text li:nth-child(2):before { content: url('../img/second.png'); }
+.container .right .text li:nth-child(3):before { content: url('../img/third.png'); }
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/progress-ring.css">
+    <link rel="stylesheet" href="./css/show1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="progress-ring" data-color="#f3f7fb, #ff9c0e" data-duration="0.5">
+            </div>
+            <div class="answer">
+                <span class="text">正确答案</span>
+                <span class="choice">A</span>
+                <span class="choice">C</span>
+            </div>
+        </div>
+        <div class="right">
+            <p class="title">全国排行榜</p>
+            <ul class="text">
+                <li>霸州 王学兵</li>
+                <li>天津 李琛</li>
+                <li>淄博 张峰</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/progress-ring.js"></script>
+<script>
+
+    $(".progress-ring").loadingRing();
+</script>
+</html>
